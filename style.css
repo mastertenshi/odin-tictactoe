@@ -1,0 +1,48 @@
+#board-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    display: inline-grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 2px;
+    background-color: black;
+    border: 0.8rem solid rgb(220, 220, 220);
+    border-radius: 1rem;
+    margin: 16px;
+}
+
+#board div {
+    /* non-selectable */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    display: flex;
+    height: 8rem;
+    width: 8rem;
+
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: gray;
+
+    background-color: rgb(220, 220, 220);
+
+    cursor: pointer;
+}
+
+#board-container button {
+    width: 24rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border: 0.1rem solid rgb(194, 194, 194);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
